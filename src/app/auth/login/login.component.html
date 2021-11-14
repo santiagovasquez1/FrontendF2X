@@ -1,0 +1,36 @@
+<mat-grid-list cols="2" rowHeight="100%">
+    <mat-grid-tile>
+        <div class="f2x-container">
+            <div class="f2x-info">
+                <img src="../../../assets/F2XLogo.webp" alt="F2XLogo" class="logo-img">
+                <h1>Consola Administrativa</h1>
+            </div>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="login-container">
+            <img src="../../../assets/F2XLogo2.webp" alt="F2XLogo" class="logo-img2">
+            <mat-card class="login-card">
+                <mat-card-header>
+                    <mat-card-title>Ingreso al sistema</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <form [formGroup]="loginForm" id="login-form" autocomplete="off" (ngSubmit)="login()">
+
+                        <mat-form-field appearance="outline">
+                            <mat-label>Usuario</mat-label>
+                            <input matInput name="usuario" type="text" placeholder="Ingrese el usuario" formControlName="username">
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline">
+                            <mat-label>Contraseña</mat-label>
+                            <input matInput name="usuario" type="password" placeholder="Ingrese la contraseña" formControlName="password">
+                        </mat-form-field>
+
+                        <button mat-flat-button color="primary" type="submit" [disabled]="!loginForm.valid">Ingresar</button>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
