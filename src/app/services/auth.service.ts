@@ -33,12 +33,17 @@ export class AuthService {
       );
   }
 
+  logout(): void {
+    localStorage.removeItem('token');
+  }
   validarToken(): boolean {
-    if(this.token){
+    if (this.token) {
       return true;
-    }else{
+    } else {
       this.route.navigate(['/login']);
       return false;
     }
   }
+
+
 }

@@ -1,1 +1,28 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container class="f2x-sidenav-container">
+    <mat-sidenav mode="side" class="f2x-sidenav" opened>
+        <div class="f2x-menu-title">
+            <img src="../../../assets/F2XLogo.webp" alt="F2XLogo" (click)="logout()">
+            <h1>Menu</h1>
+        </div>
+        <mat-selection-list #shoes [multiple]="false">
+            <a style="text-decoration: none;" [routerLink]="['./']" routerLinkActive="router-link-active">
+                <mat-list-option class="f2x-list-option">
+                    <h3>Home</h3>
+                </mat-list-option>
+            </a>
+            <a style="text-decoration: none;" [routerLink]="['./conteovehiculos']" routerLinkActive="router-link-active">
+                <mat-list-option class="f2x-list-option">
+                    <h3>Conteo de Vehiculos por dia</h3>
+                </mat-list-option>
+            </a>
+            <a style="text-decoration: none;" [routerLink]="['./recaudovehiculos']" routerLinkActive="router-link-active">
+                <mat-list-option class="f2x-list-option">
+                    <h3>Recuado de Vehiculos por dia</h3>
+                </mat-list-option>
+            </a>
+        </mat-selection-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

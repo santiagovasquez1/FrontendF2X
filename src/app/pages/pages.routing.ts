@@ -1,3 +1,4 @@
+import { HomeComponent } from './home/home.component';
 import { RecaudoVehiculosComponent } from './recaudo-vehiculos/recaudo-vehiculos.component';
 import { PagesComponent } from './pages.component';
 import { NgModule } from '@angular/core';
@@ -11,6 +12,13 @@ const routes: Routes = [
         component: PagesComponent,
         canActivate: [AuthGuard],
         children: [
+            {
+                path: "",
+                component: HomeComponent,
+                data: {
+                    title: "Dashboard"
+                }
+            },
             {
                 path: 'conteovehiculos',
                 component: ConteoVehiculosComponent,

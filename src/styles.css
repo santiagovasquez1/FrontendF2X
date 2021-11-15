@@ -57,3 +57,102 @@ body {
 .login-card form button {
     width: 100%;
 }
+
+.f2x-sidenav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f2x-sidenav {
+    height: 100%;
+    width: 300px;
+    background: #5f5f5f;
+    box-shadow: 0px 0px 5px #5f5f5f;
+}
+
+.f2x-list-option {
+    display: block;
+}
+
+.f2x-list-option h3 {
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.f2x-menu-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+}
+
+.f2x-menu-title h1 {
+    color: white;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.f2x-menu-title img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.f2x-menu-title img:hover {
+    cursor: pointer;
+}
+
+.f2x-info-container {
+    height: 100%;
+    width: 100%;
+}
+
+.f2x-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 5px #000000;
+    margin-bottom: 20px;
+}
+
+.f2x-title h2 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.f2x-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.f2x-table {
+    width: 100%;
+    display: table;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+
+/* th.mat-header-cell,
+td.mat-cell {
+    text-align: center;
+    border: 1px solid #CCC;
+    padding: 0 !important;
+} */
+
+th.mat-header-cell {
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+
+tr.mat-header-row {
+    height: 35px;
+}
+
+tr.mat-row {
+    height: 30px;
+}
