@@ -110,6 +110,11 @@ body {
     width: 100%;
 }
 
+.f2x-info-container p {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .f2x-title {
     display: flex;
     justify-content: center;
